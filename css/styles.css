@@ -15,12 +15,19 @@ img {
     max-width: 100%;
 }
 
+hr {
+    border-color: #f7f7f7;
+}
+
+/*header section*/
+
 .student-name {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
     color: #353535;
     font-family: Roboto;
+    letter-spacing: 1px;
 }
 
 #main-nav {
@@ -43,6 +50,9 @@ img {
     width: 100%;
 }
 
+/*home section */
+
+
 .nav-item a:hover {
     color: #ff8400;
 }
@@ -63,6 +73,8 @@ img {
     text-align: center;
     line-height: 1.5;
 }
+
+/*portfolio section*/
 
 #portfolio {
     width: 100%;
@@ -86,6 +98,7 @@ img {
 
 .project-title {
     font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .project-info {
@@ -97,6 +110,22 @@ img {
     padding-right: 1rem;
 }
 
+/*skills section*/
+
+#skills {
+    background-color: #f5dad7;
+    padding-bottom: 2rem;
+}
+
+.tech-skills li:hover {
+    background-color: #ff8400;
+    transition: 0.2s ease-in;
+    color: white;
+    cursor: pointer;
+}
+
+/*contact section*/
+
 .contact-container {
     padding-bottom: 3rem;
 }
@@ -107,9 +136,7 @@ img {
     margin-left: 10px;
 }
 
-hr {
-    border-color: #f7f7f7;
-}
+/*footer section*/
 
 footer {
     display: flex;
@@ -123,4 +150,147 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.wider-footer {
+    display: none;
+}
+
+/*styles for tablets*/
+
+@media (min-width: 768px) {
+    .student-name {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    #main-nav {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    #main-nav li {
+        background-color: #f2f2f2;
+        font-size: 1.1rem;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .main-photo {
+        margin-left: 1rem;
+    }
+
+    #port-img {
+        width: 930px;
+    }
+
+    .intro-p {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-item {
+        flex: 50%;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-info {
+        font-size: 1.1rem;
+    }
+
+    .tech-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-skills li {
+        width: 150px;
+        font-size: 1.18rem;
+        margin-right: 1rem;
+    }
+
+    .contact-container {
+        width: 700px;
+        margin: auto;
+    }
+
+    .contact-info {
+        font-size: 1.4rem;
+    }
+
+    #contact-p {
+        margin-bottom: 3.5rem;
+    }
+
+    footer {
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+
+    #top-link {
+        display: none;
+    }
+
+    .wider-footer {
+        display: block;
+    }
+
+    .wider-footer li {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+
+/*styles for wider tablets and desktops*/
+
+@media (min-width: 1024px) {
+
+    .wrapper {
+        margin: 1.5rem;
+    }
+
+    nav {
+        margin: 1.5rem;
+        display: flex;
+    }
+
+    .name-container {
+        width: 290px;
+        height: 135px;
+    }
+
+    #main-nav {
+        justify-content: flex-end;
+    }
+
+    #main-nav li {
+        width: 155px;
+    }
+
+    .project-item {
+        flex: 30%;
+    }
+
+    footer {
+        margin-bottom: 0.2rem;
+    }
 }
