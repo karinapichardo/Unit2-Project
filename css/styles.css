@@ -195,10 +195,16 @@ a {
 
     .main-photo {
         margin-left: 1rem;
+        width: 50%;
     }
 
     #port-img {
-        width: 930px;
+        width: 915px;
+        padding-right: 1rem;
+    }
+
+    .intro-container {
+        width: 55%;
     }
 
     .intro-p {
@@ -297,7 +303,7 @@ a {
     }
 
     .intro-p {
-        margin-top: -35px;
+        margin-top: -75px;
     }
 
     .project-item {
